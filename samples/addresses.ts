@@ -1,4 +1,4 @@
-[
+export default [
   "787 Conn Port",
   "8555 Laurie Harbor",
   "016 Tremayne River",
@@ -998,5 +998,5 @@
   "968 Patrick Harbor",
   "32787 Abigayle Union",
   "467 Andreanne Crossroad",
-  "1380 Harris Park"
-]
+  "1380 Harris Park",
+];

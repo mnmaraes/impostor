@@ -1,4 +1,4 @@
-[
+export default [
   "deleniti",
   "assumenda",
   "necessitatibus",
@@ -998,5 +998,5 @@
   "minus",
   "alias",
   "soluta",
-  "voluptatem"
-]
+  "voluptatem",
+];

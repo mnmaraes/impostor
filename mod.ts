@@ -2,13 +2,13 @@ import { Command } from "https://deno.land/x/cliffy/command.ts";
 import { exec } from "https://deno.land/x/exec/mod.ts";
 
 import { v4 } from "https://deno.land/std/uuid/mod.ts";
-import { readJson, ensureFile } from "https://deno.land/std@0.63.0/fs/mod.ts";
+import { ensureFile } from "https://deno.land/std@0.63.0/fs/mod.ts";
 
 import { serve } from "./server.ts";
 
-const words = (await readJson("./samples/words.json")) as string[];
-const paragraphs = (await readJson("./samples/paragraphs.json")) as string[];
-const addresses = (await readJson("./samples/addresses.json")) as string[];
+import words from "./samples/words.ts";
+import paragraphs from "./samples/paragraphs.ts";
+import addresses from "./samples/addresses.ts";
 
 const getRandom = (fromArray: string[]): string => {
   return fromArray[Math.round(Math.random() * (fromArray.length - 1))];

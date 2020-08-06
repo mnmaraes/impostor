@@ -1,4 +1,4 @@
-[
+export default [
   "Et aut accusantium rem error. Et eum consequuntur. Doloribus blanditiis sint. Maxime nobis sed.",
   "Voluptates maiores aut architecto eos inventore itaque qui. Et quidem perspiciatis autem omnis. Ratione doloremque error et nulla voluptates non. Et inventore veniam aliquam sint saepe nulla dolorem non.",
   "Temporibus nesciunt incidunt in. Voluptatem laboriosam aspernatur error mollitia labore. Unde aut nihil soluta ipsum ea.",
@@ -998,5 +998,5 @@
   "Omnis nisi voluptate officia rerum cum beatae. Suscipit deleniti reprehenderit velit voluptatem porro corrupti sapiente. Neque eius alias aut est minus ipsam.",
   "Culpa illo provident et voluptates optio tempora. Voluptatem sint unde laudantium voluptas. Sed aut est voluptate autem consequuntur fugit provident. Qui iste ipsam tempora vel quidem qui tempore. Error id voluptatum ut vel debitis.",
   "Non odio non. Sunt quis aliquam placeat molestias nostrum nihil. Autem debitis fugit.",
-  "Et corrupti error sit asperiores voluptatem. Placeat deserunt dolor est dignissimos doloribus dignissimos. Optio aliquid iusto necessitatibus dolores et et eum aut. Ratione quia quo repudiandae sit omnis quibusdam facilis inventore. Excepturi nesciunt eos. Laudantium assumenda perferendis quae vel."
-]
+  "Et corrupti error sit asperiores voluptatem. Placeat deserunt dolor est dignissimos doloribus dignissimos. Optio aliquid iusto necessitatibus dolores et et eum aut. Ratione quia quo repudiandae sit omnis quibusdam facilis inventore. Excepturi nesciunt eos. Laudantium assumenda perferendis quae vel.",
+];

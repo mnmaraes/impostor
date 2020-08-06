@@ -320,7 +320,24 @@ export class Model {
       options.skipFirst + options.count
     );
 
-    return ids.map((id) => this.load(modelName, "preview", id));
+    const previewFields = this._templates[modelName].options?.preview;
+    return ids.map((id) => {
+      const obj = this.load(modelName, "preview", id);
+
+      if (previewFields != null) {
+        return {
+          id: obj.id,
+          ...previewFields.reduce((acc, field) => {
+            return {
+              ...acc,
+              [field]: obj[field],
+            };
+          }, {}),
+        };
+      }
+
+      return obj;
+    });
   };
 
   getOwner = (modelName: string, { id }: any): any => {

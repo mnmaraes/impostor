@@ -1,6 +1,6 @@
 import { Application, Router, helpers } from "https://deno.land/x/oak/mod.ts";
 
-import { Model } from "./impostor.ts";
+import { Model } from "./mod.ts";
 
 type Paginated = {
   size: number;

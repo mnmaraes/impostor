@@ -555,3 +555,36 @@ export const pick = (keys: string[]): Transform => {
     resultingType: getObjectType(keys),
   };
 };
+
+type CurveOptions = {
+  numOfPoints: number;
+  variationRange: number;
+  initialRange: [number, number];
+};
+const getCurve = ({
+  numOfPoints,
+  variationRange,
+  initialRange,
+}: CurveOptions): number[] => {
+  const bias = 1.25 - Math.random() * 0.5;
+  return [...Array(numOfPoints - 1)].reduce(
+    (points: number[]) => {
+      const previous = points[points.length - 1];
+
+      const delta = Math.random() * variationRange;
+      const multiplier = 1 - Math.round(Math.random() * bias) * 2;
+
+      points.push(previous + previous * multiplier * delta);
+
+      return points;
+    },
+    [getWithinRange(initialRange)]
+  );
+};
+
+export const curve = (options: CurveOptions): FieldDefinition => {
+  return {
+    type: "number[]",
+    builder: () => getCurve(options),
+  };
+};

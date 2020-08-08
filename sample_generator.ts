@@ -6,7 +6,7 @@ import { faker } from "https://deno.land/x/deno_faker@v1.0.0/mod.ts";
 
 // Generate Words
 const words = [...new Array(1000)].map(() => {
-  return faker.lorem.word();
+  return faker.random.word();
 });
 
 console.log(words);

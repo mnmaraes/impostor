@@ -343,7 +343,7 @@ export class Model {
   getOwner = (modelName: string, { id }: any): any => {
     var ownerId = this._owner[id];
 
-    return this.load(modelName, "id", ownerId);
+    return this.load(modelName, "preview", ownerId);
   };
 
   sample = (modelName: string, model: any, options?: any): any[] => {

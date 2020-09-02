@@ -1,4 +1,4 @@
-import { Command } from "https://deno.land/x/cliffy/command.ts";
+import { Command } from "https://deno.land/x/cliffy/command/mod.ts";
 import { exec } from "https://deno.land/x/exec/mod.ts";
 
 import { v4 } from "https://deno.land/std/uuid/mod.ts";
